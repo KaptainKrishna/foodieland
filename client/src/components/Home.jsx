@@ -61,12 +61,22 @@ const Home = () => {
         />
       </div>
 
-      <div className="bg-red-200 h-85.5 mt-20">
+      <div className="h-85.5 mt-20 space-y-20">
         <div className="flex justify-between">
           <h1 className="text-4xl font-semibold">Categories</h1>
           <button className="bg-[#E7FAFE] rounded-xl text-xl px-5 py-3 font-semibold hover:shadow-lg hover:cursor-pointer">
             View All Categories
           </button>
+        </div>
+        <div className="grid lg:grid-cols-6 sm:grid-cols-3  md:grid-cols-4 gap-6 grid-cols-2 ">
+          {Array(6)
+            .fill("s")
+            .map((item, index) => (
+              <div className="bg-linear-to-t from-[#E7FAFE] to-[#F8FDFF] shadow-lg h-50.5 w-45 flex flex-col justify-center items-center gap-5 rounded-xl ">
+                <img src="/images/category-01.png" alt="" />
+                <h1>Breakfast</h1>
+              </div>
+            ))}
         </div>
       </div>
 
