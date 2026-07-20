@@ -61,7 +61,16 @@ const Home = () => {
         />
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="bg-red-200 h-85.5 mt-20">
+        <div className="flex justify-between">
+          <h1 className="text-4xl font-semibold">Categories</h1>
+          <button className="bg-[#E7FAFE] rounded-xl text-xl px-5 py-3 font-semibold hover:shadow-lg hover:cursor-pointer">
+            View All Categories
+          </button>
+        </div>
+      </div>
+
+      {/* <div className="grid grid-cols-3 gap-4">
         {Array(8)
           .fill("s")
           .map((item, index) => (
@@ -86,7 +95,7 @@ const Home = () => {
               </div>
             </div>
           ))}
-      </div>
+      </div> */}
     </div>
   );
 };
