@@ -165,7 +165,7 @@ const Home = () => {
         {recipes.map((item, index) => (
           <div
             key={index}
-            className="w-full bg-[#E7FAFE] rounded-2xl p-4 flex flex-col gap-4"
+            className="w-full bg-gradient-to-t from-[#E7FAFE] to-transparent rounded-2xl p-4 flex flex-col gap-4"
           >
             <img src={item.img} alt="food" className="rounded-2xl w-full" />
             <h1 className="text-3xl">{item.name}</h1>
@@ -192,11 +192,11 @@ const Home = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
             debitis perspiciatis consequatur blanditiis obcaecati.
           </p>
-          <button className="border text-lg px-7 py-3 w-fit bg-black text-white font-semibold rounded-lg">
+          <button className="border text-lg px-7 py-3 w-fit bg-black text-white font-semibold rounded-lg hover:shadow-lg hover:cursor-pointer">
             Learn More
           </button>
         </div>
-        <img src="/images/chef-01.png" alt="" />
+        <img src="/images/chef-01.png" alt="chef" />
       </div>
     </div>
   );
